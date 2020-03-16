@@ -1,0 +1,43 @@
+//.body {
+//   background-image: url(src/images/temnyj-fon.jpg);
+//}
+
+.first {
+   background: linear-gradient(to top, #021017, #12436d);
+   width: 250px;
+   height: 200px;
+   margin: 10px auto;
+   border-radius: 10px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.vvod {
+  background: #fbfbfb;
+  width: 190px;
+  height: 30px;
+}
+.login {
+  margin-bottom: 10px;
+}
+
+.parol {
+  margin-bottom: 5px;
+}
+
+.send {
+  background: linear-gradient(to top, #dbdcdc, #ececec);
+  border-radius: 1px;
+  width: 70px;
+  text-align: center;
+
+}
+.exit {
+   align-self:flex-end;
+   background: linear-gradient(to top, #dbdcdc, #ececec);
+   border-radius: 11px;
+   width: 22px;
+   text-align: center;
+   padding-bottom: 2px;
+}
