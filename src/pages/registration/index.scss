@@ -1,0 +1,43 @@
+.registration {
+  background: linear-gradient(to top, #021017, #12436d);
+  width: 250px;
+  height: 400px;
+  margin: 10px auto;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+    &__exit {
+    align-self:flex-end;
+    background: linear-gradient(to top, #dbdcdc, #ececec);
+    border-radius: 11px;
+    width: 22px;
+    text-align: center;
+    padding-bottom: 2px;
+    margin: 3px;
+    }
+
+    &__input-fname,
+    &__input-lname,
+    &__input-birthday,
+    &__input-subscribe,
+    &__input-gender,
+    &__input-email {
+      background: #fbfbfb;
+      width: 190px;
+      height: 30px;
+      margin-bottom: 10px;
+      padding: 3px;
+     }
+
+    &__send {
+      background: linear-gradient(to top, #dbdcdc, #ececec);
+      border-radius: 1px;
+      width: 70px;
+      text-align: center;
+      margin: 10px;
+     }
+}
+
+//email/first name/last name/birthday(date)/subscribe(boolean)/gender(select -M-F-Undefined)/

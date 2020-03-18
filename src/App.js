@@ -1,12 +1,12 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Info from './pages/auth';
+import Registration from './pages/registration';
 
 function App() {
   return (
     <div>
-      <Info/>
+      <Registration/>
     </div>
   );
 }

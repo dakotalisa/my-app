@@ -1,23 +1,19 @@
 import React from "react";
 import './index.scss';
 
-class Info extends React.Component {
+class Auth extends React.Component {
   render() {
     return (
       //<div className="body">
-      <div className="first">
-        <p>
-          <div className="exit">x</div>
-        </p>
-            <input type="buuton" className="vvod login" value="логин"/>
-            <input type="buuton" className="vvod parol" value="пароль"/>
-        <p>
-          <div className="send">жмяк</div>
-        </p>
+      <div className="auth">
+        <div className="auth__exit">x</div>
+        <input type="text" className="auth__button-login" value="логин"/>
+        <input type="password" className="auth__button-password" value="пароль"/>
+        <div className="auth__send">жмяк</div>
       </div>
     //</div>
     );
   }
 }
 
-export default Info;
+export default Auth;
