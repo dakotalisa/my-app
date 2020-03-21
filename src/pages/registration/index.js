@@ -1,14 +1,16 @@
-import React from "react";
+import React from 'react';
 import './index.scss';
+import {Input} from '../../components'
+
 
 class Registration extends React.Component {
   render() {
     return (
       <div className="registration">
         <div className="registration__exit">x</div>
-        <input type="text" className="registration__input-email" placeholder="email"/>
-        <input type="text" className="registration__input-fname" placeholder="first name"/>
-        <input type="text" className="registration__input-lname" placeholder="last name"/>
+        <Input placeholder="email" />
+        <Input placeholder="first name" />
+        <Input placeholder="last name" />
         <input type="date" className="registration__input-birthday" placeholder="birthday"/>
         <input type="boolean" className="registration__input-subscribe" placeholder="subscribe"/>
         <select>
