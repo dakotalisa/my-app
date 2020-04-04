@@ -1,21 +1,34 @@
 import React from "react";
 import './index.scss';
 
+function validatorRequired(value) {
+  return value === ('' || null || undefined) ? 'Нужно заполнить' : ''
+}
+
 class Input extends React.Component {
 
   constructor(props) {
    super(props);
    this.state = { value: props.value };
+   this.handleChange = this.handleChange.bind(this);
+  }
+
+  handleChange(event) {
+    this.setState({value: event.target.value});
   }
 
   render() {
     return (
-      <input
-        type="text"
-        className="input"
-        value={this.state.value}
-        placeholder={ this.props.placeholder }
-      />
+      <div>
+        <input
+          type="text"
+          className="input"
+          value={ this.state.value }
+          placeholder={ this.props.placeholder }
+          onChange={ this.handleChange }
+        />
+        { validatorRequired(this.state.value) }
+      </div>
     )
   }
 }

@@ -1,6 +1,8 @@
 import React from 'react';
 import './index.scss';
-import {Input} from '../../components'
+import {Input} from '../../components';
+import {Dateinput} from '../../components';
+import {Subinput} from '../../components';
 
 
 class Registration extends React.Component {
@@ -11,8 +13,8 @@ class Registration extends React.Component {
         <Input placeholder="email" />
         <Input placeholder="first name" />
         <Input placeholder="last name" />
-        <input type="date" className="registration__input-birthday" placeholder="birthday"/>
-        <input type="boolean" className="registration__input-subscribe" placeholder="subscribe"/>
+        <Dateinput placeholder="birthday"/> 
+        <Subinput placeholder="subscribe"/>
         <select>
             <option disabled="disabled" placeholder="gender">Выберите пол:</option>
             <option value="men">мужской</option>
@@ -24,4 +26,5 @@ class Registration extends React.Component {
   }
 }
 
+//<Dateinput placeholder="birthday" /> 
 export default Registration;
