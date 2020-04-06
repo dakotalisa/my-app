@@ -1,12 +1,11 @@
 import React from "react";
 import './index.scss';
-//import { required as validatorReqired } from 'src/utils/validators';
 
 function validatorRequired(value) {
   return value === ('' || null || undefined) ? 'Нужно заполнить' : ''
 }
 
-class Input extends React.Component {
+class Subscribe extends React.Component {
 
   constructor(props) {
     super(props);
@@ -22,8 +21,8 @@ class Input extends React.Component {
     return (
       <div>
         <input
-          type="text"
-          className="input"
+          type="boolean"
+          className="registration__input-subscribe"
           value={this.state.value}
           placeholder={this.props.placeholder}
           onChange={this.handleChange}
@@ -34,5 +33,4 @@ class Input extends React.Component {
   }
 }
 
-
-export default Input;
+export default Subscribe;

@@ -1,7 +1,8 @@
 import Input from './input';
-import Dateinput from './dateinput';
-import Subinput from './subinput';
+import Date from './date';
+import Subscribe from './subscribe';
+import Menu from './menu';
 
 export {
-  Input, Dateinput,Subinput
+  Input, Date, Subscribe, Menu//, required
 }
